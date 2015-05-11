@@ -12,7 +12,9 @@
 
   .strip-dark {
     background-color: $dark-aubergine;
+    // scss-lint:disable UrlFormat
     background-image: url('http://www.canonical.com/static/img/backgrounds/background-grid.png');
+    // scss-lint:enable UrlFormat
     background-repeat: repeat;
     color: $light-link;
 
