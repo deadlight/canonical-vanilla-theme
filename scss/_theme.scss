@@ -5,8 +5,10 @@
 // import required files
 @import '../node_modules/vanilla-framework/scss/vanilla';
 @import 'modules/strips';
+@import 'modules/typography';
 
 @mixin canonical-vanilla-theme {
   @include vanilla;
   @include canonical-strips;
+  @include canonical-typography;
 }
