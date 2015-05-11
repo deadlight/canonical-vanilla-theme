@@ -11,26 +11,18 @@
     margin: 0;
     padding: 0;
     width: 100%;
-
-    li {
-      border-right: 0;
-      width: 100%;
-    }
-
-    .nav-toggle {
-      display: block;
-    }
-  }
-
-
-  @media only screen and (min-width: $navigation-threshold) {
-    .banner .nav-primary ul {
+    @media only screen and (min-width: $navigation-threshold) {
       border-left: 1px solid $header-dark-border;
       border-right: 1px solid $header-light-border;
       display: block;
       width: auto;
+    }
 
-      li {
+    li {
+      border-right: 0;
+      width: 100%;
+
+      @media only screen and (min-width: $navigation-threshold) {
         border-left: 0;
         border-right: 0;
         width: auto;
@@ -39,7 +31,9 @@
           border-right: 0;
         }
       }
+    }
 
+    @media only screen and (min-width: $navigation-threshold) {
       a, 
       a:link {
         border-left: 1px solid $header-light-border;
@@ -50,6 +44,10 @@
         background-color: $header-dark-border;
         border-right: 1px solid transparent;
       }
+    }
+
+    .nav-toggle {
+      display: block;
     }
   }
 }
