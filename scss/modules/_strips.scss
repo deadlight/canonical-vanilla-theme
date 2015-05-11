@@ -12,13 +12,17 @@
 
   .strip-dark {
     background-color: $dark-aubergine;
-    ///background-image: url('../img/backgrounds/background-grid.png');
+    background-image: url('http://www.canonical.com/static/img/backgrounds/background-grid.png');
     background-repeat: repeat;
     color: $light-link;
 
     &.solid {
       background-image: none;
       background-color: $dark-aubergine;
+    }
+
+    h1 {
+      color: $light-link;
     }
   }
 
