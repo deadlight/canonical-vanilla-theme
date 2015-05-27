@@ -4,11 +4,13 @@
 
 // import required files
 @import '../node_modules/vanilla-framework/scss/vanilla';
+@import 'modules/inline-logos';
 @import 'modules/strips';
 @import 'modules/typography';
 
 @mixin canonical-vanilla-theme {
   @include vanilla;
+  @include canonical-inline-logos;
   @include canonical-strips;
   @include canonical-typography;
 }
