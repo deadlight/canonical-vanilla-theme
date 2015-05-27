@@ -1,0 +1,17 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// Inline logos component
+/// @group Lists
+/// @example
+///   <ul class="inline-logos">
+///     <li>...</li>
+///   </ul>
+
+@mixin canonical-inline-logos {
+  .inline-logos li img {
+    max-width: 230px;
+    max-height: 65px;
+  }
+}
