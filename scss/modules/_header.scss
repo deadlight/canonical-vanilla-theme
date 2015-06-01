@@ -5,6 +5,7 @@
 /// header styles
 /// @group 
 @mixin canonical-header {
+  // scss-lint:disable NestingDepth
   .banner {
     box-shadow: none;
     
@@ -53,4 +54,5 @@
       }
     }
   }
+  // scss-lint:enable NestingDepth
 }
