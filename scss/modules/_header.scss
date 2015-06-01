@@ -30,19 +30,18 @@
         &:last-child {
           border-right: 0;
         }
-      }
-    }
 
-    @media only screen and (min-width: $navigation-threshold) {
-      a, 
-      a:link {
-        border-left: 1px solid $header-light-border;
-        border-right: 1px solid $header-dark-border;
-      }
+        a, 
+        a:link,
+        a:visited {
+          border-left: 1px solid $header-light-border;
+          border-right: 1px solid $header-dark-border;
+        }
 
-      a:hover {
-        background-color: $header-dark-border;
-        border-right: 1px solid transparent;
+        a:hover {
+          background-color: $header-dark-border;
+          border-right: 1px solid transparent;
+        }
       }
     }
 
