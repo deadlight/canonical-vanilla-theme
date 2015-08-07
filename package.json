@@ -1,6 +1,6 @@
 {
   "name": "canonical-vanilla-theme",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A Canonical flavoured theme for the wonderfully simple, extendable CSS framework.",
   "author": {
     "name": "Canonical Webteam",
@@ -45,7 +45,7 @@
     "url": "https://github.com/ubuntudesign/canonical-vanilla-theme"
   },
   "dependencies": {
-    "vanilla-framework": "0.0.13"
+    "vanilla-framework": "0.0.53"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
