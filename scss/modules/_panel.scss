@@ -1,0 +1,18 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// panel styles
+/// @group
+@mixin canonical-panel {
+  .panel {
+    background-color: $panel-background-color;
+    border-radius: 4px;
+    color: $panel-text-color;
+    padding: 1.333em 20px;
+  }
+
+  .panel.panel-alt {
+    background-color: $panel-alt-background-color;
+  }
+}
