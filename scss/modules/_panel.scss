@@ -10,9 +10,9 @@
     border-radius: 4px;
     color: $panel-text-color;
     padding: 1.333em 20px;
-  }
 
-  .panel.panel-alt {
-    background-color: $panel-alt-background-color;
+    &--alt {
+      background-color: $panel-alt-background-color;
+    }
   }
 }
