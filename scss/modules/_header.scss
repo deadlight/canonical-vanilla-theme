@@ -3,12 +3,13 @@
 ////
 
 /// header styles
-/// @group 
+/// @group navigation
 @mixin canonical-header {
   // scss-lint:disable NestingDepth
   .banner {
+    border-bottom: 0;
     box-shadow: none;
-    
+
     .nav-primary ul {
       border: 0;
       display: none;
@@ -35,7 +36,7 @@
             border-right: 0;
           }
 
-          a, 
+          a,
           a:link,
           a:visited {
             border-left: 1px solid $header-light-border;
