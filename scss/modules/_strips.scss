@@ -3,8 +3,12 @@
 ////
 
 /// strip class styles
-/// @group 
+/// @group
 @mixin canonical-strips {
+  .inner-wrapper {
+    max-width: $content-max-width;
+  }
+
   .strip-dark,
   .strip-light {
     clear: both;
