@@ -4,6 +4,7 @@
 
 // import required files
 @import '../node_modules/vanilla-framework/scss/vanilla';
+@import 'modules/body';
 @import 'modules/forms';
 @import 'modules/header';
 @import 'modules/inline-logos';
@@ -13,6 +14,7 @@
 
 @mixin canonical-vanilla-theme {
   @include vanilla;
+  @include canonical-body;
   @include canonical-forms;
   @include canonical-header;
   @include canonical-inline-logos;
