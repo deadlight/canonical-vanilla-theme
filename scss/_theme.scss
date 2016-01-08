@@ -11,6 +11,11 @@
 @import 'modules/panel';
 @import 'modules/strips';
 @import 'modules/typography';
+@import 'modules/social-links';
+@import 'modules/legal';
+@import 'modules/external-links';
+@import 'modules/compact-nav';
+@import 'modules/footer';
 
 @mixin canonical-vanilla-theme {
   @include vanilla;
@@ -21,4 +26,8 @@
   @include canonical-panel;
   @include canonical-strips;
   @include canonical-typography;
+  @include canonical-social-links;
+  @include canonical-external-links;
+  @include canonical-compact-nav;
+  @include canonical-legal;
 }

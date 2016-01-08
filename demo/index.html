@@ -13,6 +13,15 @@
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" media="screen" href="../build/css/build.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic%7CUbuntu+Mono' rel='stylesheet' type='text/css' />
+
+    <style>
+        // Just used for illustration of the usually-invisible grid
+        #grid .box,
+        #nested-grid .box {
+            border: 1px solid #888;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -570,9 +579,9 @@
                     </form>
                 </div>
             </div>
-            <div class="row strip-dark no-border">
+            <div class="row no-border strip-light">
                 <div class="inner-wrapper">
-                    <div class="ten-col prepend-one panel panel--alt"
+                    <div class="ten-col prepend-one">
                         <h2 class="muted-heading">A selection of customers using our services</h2>
                         <ul class="inline-logos">
                             <li><img src="http://www.canonical.com/static/img/logos/logo-wikimedia-foundation.png" alt="Wikimedia logo"></li>
@@ -592,29 +601,86 @@
                 </div>
             </div>
         </div>
-    <footer class="global clearfix no-global">
-      <nav id="main-navigation" role="navigation" class="clearfix">
-        <div class="legal clearfix has-cookie">
-            <p class="twelve-col">© 2015 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
-            <ul class="inline-list clear">
-                <li><a href="/legal"><small>Legal information</small></a>
-                </li>
-                <li><a href="https://bugs.launchpad.net/ubuntu-website-content/"><small>Report a bug on this site</small></a>
-                </li>
-            </ul>
-            <span class="accessibility-aid"><a href="#">Got to the top of the page</a></span>
-        </div>
-      </nav>
-    </footer>
+
+        <footer class="row strip footer">
+            <div class="inner-wrapper">
+                <nav role="navigation">
+                    <div class="canonlist four-col">
+                        <h2 class="footer__heading">Canonical</h2>
+                        <ul class="compact-nav">
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Integer ac </a>
+                            </li>
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Pellentesque</a>
+                            </li>
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Facilisis</a>
+                            </li>
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Eros</a>
+                            </li>
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Cursus</a>
+                            </li>
+                            <li class="compact-nav__list-item">
+                                <a class="compact-nav__link" href="#">Curabitur nec</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="five-col">
+                        <h2 class="footer__heading">Follow us</h2>
+                        <ul class="social-links">
+                            <li class="social-links__item">
+                                <a class="social-links__link--twitter"  href="https://twitter.com/Canonical">@canonical on Twitter</a>
+                            </li>
+                            <li class="social-links__item">
+                                <a class="social-links__link--google"  href="https://plus.google.com/116469902245452284818/posts">Canonical on Google+</a>
+                            </li>
+                            <li class="social-links__item">
+                                <a class="social-links__link--facebook" href="https://www.facebook.com/pages/Canonical/125818784107695?fref=ts">Canonical on Facebook</a>
+                            </li>
+                            <li class="social-links__item">
+                                <a class="social-links__link--canonical"  href="http://blog.canonical.com">Canonical blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="three-col last-col">
+                        <h2 class="footer__heading">Find out more</h2>
+                        <ul class="external-links">
+                            <li>
+                                <a class="external-links__link" href="http://www.ubuntu.com">Ubuntu</a>
+                            </li>
+                            <li>
+                                <a class="external-links__link" href="http://www.ubuntu.com/management/ubuntu-advantage">Ubuntu Advantage</a>
+                            </li>
+                            <li>
+                                <a class="external-links__link" href="http://www.ubuntu.com/partners">Partnerships</a>
+                            </li>
+                            <li>
+                                <a class="external-links__link" href="http://insights.ubuntu.com">Press and resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="legal twelve-col">
+                    <p class="legal__text">&copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+                    <ul class="legal__list">
+                        <li class="legal__list-item">
+                            <a class="legal__link" href="http://www.ubuntu.com/legal">Legal information</a>
+                        </li>
+                        <li class="legal__list-item">
+                            <a class="legal__link" href="#">Est laborum</a>
+                        </li>
+                        <li class="legal__list-item">
+                            <a class="legal__link" href="#">Duis aute</a>
+                        </li>
+                    </ul>
+                    <span class="accessibility-aid"><a href="#">Go to the top of the page</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
-
-<style>
-    #grid .box,
-    #nested-grid .box {
-        border: 1px solid #888;
-        padding: 20px;
-    }
-</style>
-
 </html>
 <!-- the end -->

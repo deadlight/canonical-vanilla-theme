@@ -1,0 +1,22 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// footer styles
+/// @group footer
+
+/* @section footer
+-------------------------------------------------------------- */
+@mixin vf-footer {
+  .footer {
+    background-color: transparent;
+
+    &__heading {
+      color: $warm-grey;
+      font-size: .8em;
+      letter-spacing: .05em;
+      padding-bottom: .75em;
+      text-transform: uppercase;
+    }
+  }
+}

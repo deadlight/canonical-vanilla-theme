@@ -1,0 +1,46 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// legal styles
+/// @group footer
+
+// scss-lint:disable NestingDepth
+@mixin canonical-legal {
+  .legal {
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__list {
+      font-size: 12px;
+      margin-left: 0;
+    }
+
+    &__list-item {
+      display: block;
+      float: left;
+
+      &::after {
+        color: $warm-grey;
+        content: '•';
+        font-size: 16px;
+        line-height: 12px;
+        margin: 0 5px;
+        vertical-align: middle;
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+    }
+
+    &__link {
+      color: $cool-grey;
+    }
+  }
+}
+// scss-lint:enable NestingDepth
