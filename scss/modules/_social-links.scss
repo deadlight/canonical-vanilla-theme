@@ -1,0 +1,78 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// social links
+/// @group social
+// scss-lint:disable NestingDepth, UrlFormat, SelectorFormat, NameFormat
+@mixin canonical-social-links {
+  %social-links__link {
+    background-image: url('https://assets.ubuntu.com/v1/3a7c44e0-icon-social.svg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 44px;
+    overflow: hidden;
+    width: 44px;
+  }
+
+  .social-links {
+    margin-left: 0;
+
+    &__item {
+      display: inline-block;
+      height: 45px;
+      margin-right: 20px;
+      text-indent: -999em;
+      width: 45px;
+    }
+
+    &__link {
+      @extend %social-links__link;
+
+      &--canonical {
+        @extend %social-links__link;
+        background-position: -135px 0;
+
+        &:hover {
+          background-position: -135px -45px;
+        }
+      }
+
+      &--google {
+        @extend %social-links__link;
+        background-position: -45px 0;
+
+        &:hover {
+          background-position: -45px -45px;
+        }
+      }
+
+      &--facebook {
+        @extend %social-links__link;
+        background-position: -90.5px 0;
+
+        &:hover {
+          background-position: -90.5px -45px;
+        }
+      }
+
+      &--twitter {
+        @extend %social-links__link;
+        background-position: 0 0;
+
+        &:hover {
+          background-position: 0 -45px;
+        }
+      }
+    }
+  }
+
+  /// PNG fallback for non-SVG browsers
+  .opera-mini,
+  .no-svg {
+    .social-links__link {
+      background-image: url('https://assets.ubuntu.com/v1/3a7c44e0-icon-social.svg?fmt=png');
+    }
+  }
+}
+// scss-lint:enable NestingDepth, UrlFormat, SelectorFormat, NameFormat

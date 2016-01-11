@@ -1,0 +1,21 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// compact nav styling
+/// @group footer
+@mixin canonical-compact-nav {
+  .compact-nav {
+    margin: 0;
+
+    &__list-item {
+      float: left;
+      display: block;
+      width: 49%;
+    }
+
+    &__link {
+      color: $cool-grey;
+    }
+  }
+}

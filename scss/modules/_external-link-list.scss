@@ -1,0 +1,19 @@
+////
+/// @author       Web Team at Canonical Ltd
+////
+
+/// external link list styling
+/// @group footer
+@mixin canonical-external-link-list {
+  .external-link-list {
+    margin: 0;
+
+    &__list-item {
+      margin-bottom: .5em;
+    }
+
+    &__link {
+      color: $cool-grey;
+    }
+  }
+}
