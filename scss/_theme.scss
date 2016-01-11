@@ -13,7 +13,7 @@
 @import 'modules/typography';
 @import 'modules/social-links';
 @import 'modules/legal';
-@import 'modules/external-links';
+@import 'modules/external-link-list';
 @import 'modules/compact-nav';
 @import 'modules/footer';
 
@@ -27,7 +27,7 @@
   @include canonical-strips;
   @include canonical-typography;
   @include canonical-social-links;
-  @include canonical-external-links;
+  @include canonical-external-link-list;
   @include canonical-compact-nav;
   @include canonical-legal;
 }
