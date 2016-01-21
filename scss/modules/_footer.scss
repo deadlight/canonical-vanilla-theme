@@ -43,6 +43,19 @@
     }
   }
 
+  @media only screen and (max-width : 767px) {
+    .footer {
+      overflow: hidden;
+      padding-left: 0;
+      padding-right: 0;
+
+      &__container--guttered {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
   .no-svg .footer__heading--external {
     background-image: url('https://assets.ubuntu.com/v1/e1b12fdd-external-link-grey.svg?fmt=png');
   }
