@@ -49,9 +49,14 @@
       padding-left: 0;
       padding-right: 0;
 
-      &__container--guttered {
-        margin-right: 10px;
-        margin-left: 10px;
+      &__container {
+        clear: both;
+
+        &--guttered {
+          clear: both;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
       }
     }
   }
