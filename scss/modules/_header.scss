@@ -10,6 +10,14 @@
     border-bottom: 0;
     box-shadow: none;
 
+    .logo {
+      margin-left: 0;
+
+      @media only screen and (max-width: $site-max-width) {
+        margin-left: 10px;
+      }
+    }
+
     .nav-primary ul {
       border: 0;
       display: none;
